@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AdventOfCode - Run Last": {
+      "commandName": "Project"
+    },
+    "AdventOfCode - New Day": {
+      "commandName": "Project",
+      "commandLineArgs": "new"
+    }
+  }
+}

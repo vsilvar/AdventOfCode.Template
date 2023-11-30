@@ -2,22 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+	<Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Exe</OutputType>
+    <UserSecretsId>06fedc1f-422a-422a-b80d-06b6851e5ffd</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AoCHelper" Version="3.0.0" />
+	<Using Include="AoCHelper" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <NoWarn>S101</NoWarn>
-  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AoCHelper" Version="3.1.0" />
+    <PackageReference Include="Flurl.Http" Version="3.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Update="Inputs\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Inputs\" />
   </ItemGroup>
 
 </Project>
